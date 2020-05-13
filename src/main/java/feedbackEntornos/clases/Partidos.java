@@ -8,6 +8,8 @@ public class Partidos {
 	private int resultadoVisitante;
 	private String incidencias;
 	private static int numPartidos;
+	int sumaGolesPartido = 0;
+	
 	
 	public Partidos(String campo, String nombreArbitro, int resultadoLocal, int resultadoVisitante,
 			String incidencias) {
@@ -45,6 +47,11 @@ public class Partidos {
 	
 	public static int dimeNumeroDePartidos() {
 		return numPartidos;
+	}
+	
+	public int sumaGolesPartido() {
+		sumaGolesPartido = getResultadoLocal()+getResultadoVisitante();
+		return sumaGolesPartido();
 	}
 	
 	

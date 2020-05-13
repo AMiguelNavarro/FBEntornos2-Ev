@@ -12,9 +12,11 @@ public class Arbitros extends Persona{
 	public String getObservacionesPartido() {
 		return observacionesPartido;
 	}
-	
-	public String registrarResultadoPartido() {
-		return "Ha ganado el equipo local";
+
+	public void setObservacionesPartido(String observacionesPartido) {
+		this.observacionesPartido = observacionesPartido;
 	}
+
+	
 	
 }

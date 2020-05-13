@@ -21,17 +21,34 @@ public class Calendario {
 		return campoJuego;
 	}
 
+	public void setCampoJuego(String campoJuego) {
+		this.campoJuego = campoJuego;
+	}
+
 	public String getEquipoLocal() {
 		return equipoLocal;
+	}
+
+	public void setEquipoLocal(String equipoLocal) {
+		this.equipoLocal = equipoLocal;
 	}
 
 	public String getEquipoVisitante() {
 		return equipoVisitante;
 	}
 
+	public void setEquipoVisitante(String equipoVisitante) {
+		this.equipoVisitante = equipoVisitante;
+	}
+
 	public Date getFechaPartido() {
 		return fechaPartido;
 	}
+
+	public void setFechaPartido(Date fechaPartido) {
+		this.fechaPartido = fechaPartido;
+	}
+
 	
 	
 	
