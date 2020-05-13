@@ -8,12 +8,10 @@ public class Equipo {
 	private String colorCamiseta1;
 	private String colorCamiseta2;
 	private String categoria;
-	private static int numEquipos;
 	
 	public Equipo (String nombreEquipo, String categoria) {
 		this.nombreEquipo = nombreEquipo;
 		this.categoria = categoria;
-		numEquipos++;
 	}
 
 	
@@ -51,9 +49,6 @@ public class Equipo {
 		this.categoria = categoria;
 	}
 
-	public static int dimeNumeroDeEquipos() {
-		return numEquipos;
-	}
 	
 	
 	

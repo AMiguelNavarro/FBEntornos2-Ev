@@ -12,6 +12,12 @@ public class Jugadores extends Persona{
 	public String getNombreEquipo() {
 		return nombreEquipo;
 	}
+
+	public void setNombreEquipo(String nombreEquipo) {
+		this.nombreEquipo = nombreEquipo;
+	}
+
+
 	
 	
 	

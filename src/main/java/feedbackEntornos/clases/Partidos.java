@@ -7,8 +7,7 @@ public class Partidos {
 	private int resultadoLocal;
 	private int resultadoVisitante;
 	private String incidencias;
-	private static int numPartidos;
-	int sumaGolesPartido = 0;
+	private int golesTotalPartido = 0;
 	
 	
 	public Partidos(String campo, String nombreArbitro, int resultadoLocal, int resultadoVisitante,
@@ -18,41 +17,70 @@ public class Partidos {
 		this.resultadoLocal = resultadoLocal;
 		this.resultadoVisitante = resultadoVisitante;
 		this.incidencias = incidencias;
-		numPartidos++;
+		this.golesTotalPartido = resultadoLocal+resultadoVisitante;
 	}
+
 
 	public String getCampo() {
 		return campo;
 	}
 
+
+	public void setCampo(String campo) {
+		this.campo = campo;
+	}
+
+
 	public String getNombreArbitro() {
 		return nombreArbitro;
 	}
+
+
+	public void setNombreArbitro(String nombreArbitro) {
+		this.nombreArbitro = nombreArbitro;
+	}
+
 
 	public int getResultadoLocal() {
 		return resultadoLocal;
 	}
 
+
+	public void setResultadoLocal(int resultadoLocal) {
+		this.resultadoLocal = resultadoLocal;
+	}
+
+
 	public int getResultadoVisitante() {
 		return resultadoVisitante;
 	}
 
+
+	public void setResultadoVisitante(int resultadoVisitante) {
+		this.resultadoVisitante = resultadoVisitante;
+	}
+
+
 	public String getIncidencias() {
 		return incidencias;
 	}
-	
-	public String dimeResultado() {
-		return "El resultado es "+getResultadoLocal()+ " - " +getResultadoVisitante();
+
+
+	public void setIncidencias(String incidencias) {
+		this.incidencias = incidencias;
 	}
-	
-	public static int dimeNumeroDePartidos() {
-		return numPartidos;
+
+
+	public int getGolesTotalPartido() {
+		return golesTotalPartido;
 	}
-	
-	public int sumaGolesPartido() {
-		sumaGolesPartido = getResultadoLocal()+getResultadoVisitante();
-		return sumaGolesPartido();
+
+
+	public void setGolesTotalPartido(int golesTotalPartido) {
+		this.golesTotalPartido = golesTotalPartido;
 	}
+
+
 	
 	
 }
