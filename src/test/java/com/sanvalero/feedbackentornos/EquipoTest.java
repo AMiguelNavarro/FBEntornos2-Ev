@@ -16,11 +16,8 @@ public class EquipoTest {
 		Equipo equipo = new Equipo("Barcelona", "Primera división");
 		
 		assertEquals(true, torneo.registrarEquipo(equipo));
-		assertEquals(true, torneo.registrarEquipo(equipo));
-		
-		assertEquals(1, torneo.getCantidadEquipos());
-		
-		System.out.println("Hola que tal ");
+		assertEquals(false, torneo.registrarEquipo(equipo));
+
 		
 	}
 		
