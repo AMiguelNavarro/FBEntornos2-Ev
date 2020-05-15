@@ -1,4 +1,4 @@
-package feedbackEntornos.clases;
+package com.sanvalero.feedbackentornos.clases;
 
 public class Partidos {
 

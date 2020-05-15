@@ -1,4 +1,4 @@
-package feedbackEntornos.clases;
+package com.sanvalero.feedbackentornos.clases;
 
 import java.util.ArrayList;
 import java.util.List;
